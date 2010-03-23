@@ -1,0 +1,14 @@
+<h2>Projects</h2>
+
+<% unless @projects.blank? -%>
+  <ul id="projects">
+    <% @projects.each do |project| -%>
+      <li class="clearfix">  
+        <%= image_tag project.screenshot.url(:thumb), :class => 'thumb' %>
+        <h3><%= link_to project.title, project_path(project) %></h3>
+        <p><%= truncate(project.description, :length => 30) %></p>
+        <p><%= link_to "Visit site", project.url, :rel => 'external' %></p>
+      </li>
+    <% end -%>
+  </ul>
+<% end -%>

@@ -1,0 +1,117 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	padding: 20px;
+}
+
+#hd{font-size: 93%;}
+#bd{font-size: 93%;}
+#ft{font-size: 85%; }
+
+
+/* blocks */
+#hd{border-bottom: 4px solid #333; padding: 0 0 10px 0; margin: 0 0 30px 0;}
+#content{ margin: 20px 0 0 0; width: 960px;}
+.main{ width: 500px;}
+.side{ width: 380px;}
+.left{float: left;}
+.right{float: right;}
+.half{width: 49%;}
+.third{width: 33%;}
+
+
+/* text */
+h1{font-size: 182%;}
+h2{font-size: 167%;}
+h4{font-size: 123.1%;}
+h3{font-weight: bold;}
+
+
+/* links */
+a{color: #00A630;}
+a.admin{color: red;}
+a[rel]{color: #000;}
+
+/* lists */
+ul#projects{margin: 20px 0;}
+ul#projects li{margin: 0 0 20px 0;}
+ul#menu li{display: inline-block; margin-right: 10px;}
+
+
+/* form */
+form{margin: 10px 0; width: 360px;}
+.field_wrap{margin: 0 0 10px 0;}
+label{width: 100px; display: inline-block; float: left;}
+input[type='text']{width: 240px;}
+textarea{width: 240px;}
+form small{color: #999; font-size: 87%; margin-left: 100px;}
+
+
+/* notices */
+#flash_notice, #flash_error {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+#flash_error {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+.clearfix{zoom: 1;}

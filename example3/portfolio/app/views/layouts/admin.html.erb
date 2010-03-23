@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Portfolio Admin Area</title>
+	<%= stylesheet_link_tag 'fonts-min', 'reset-min', 'application' %>
+  <%= yield :head %>
+</head>
+
+<body>
+  <div id="doc">
+    <div id="hd" class="clearfix">
+      <h1>Portfolio Admin</h1>
+      <ul id="menu" class="main left">
+        <li><%= link_to 'Projects', admin_projects_path %></li>
+        <li><%= link_to 'Create a new project', new_admin_project_path %></li>
+      </ul>
+      <p class="side right"><%= link_to 'View public site', root_path %></p>
+    </div>
+
+    <div id="bd" class="clearfix">
+      <% flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+
+      <div id="content" class="clearfix">
+        <%= yield %>
+      </div>
+
+    </div>
+    
+    <div id="ft">
+    </div>
+  </div>
+</body>
+</html>

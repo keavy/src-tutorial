@@ -1,0 +1,12 @@
+<h2><%= "Edit project #{@project.title}" %></h2>
+
+
+<% form_for @project, :url => admin_project_path(@project), :html => {:method => :put, :multipart => true} do |f| %>
+  <%= f.error_messages %>
+
+  <%= render :partial => 'fields', :locals => {:f => f} %>
+  
+  <p>
+    <%= f.submit 'Save changes' %> | <%= link_to "Cancel", admin_projects_path %>
+  </p>
+<% end %>

@@ -1,0 +1,24 @@
+h1. Beginners tutorial in Ruby on Rails
+
+This material has been prepared for a charity tutorial for the "Scottish Ruby Conference":http://scottishrubyconference.com to benefit the "Children’s Hospice Association of Scotland":http://www.chas.org.uk/
+
+You can donate at the "JustGiving":http://www.justgiving.com/src2010 site
+
+
+h2. Examples
+
+All examples are based on a simple project portfolio application
+
+# A basic scaffold generated app
+# basic manually created app
+# The manual app, with improved CSS[1], and separate admin area (with login) for managing content
+# Same app, making use of gems/plugins:
+Victor Gumayunov's custom-err-msg[2] plugin: to improve the wording of error messages
+Thoughtbot's Paperclip gem[3]: to attach a screenshot
+ 
+ 
+fn1. "Yahoo YUI reset":http://developer.yahoo.com/yui/reset/ and "Yahoo YUI fonts":http://developer.yahoo.com/yui/fonts/ alongside author's own basic stylesheet
+
+fn2. "custom-err-msg plugin":http://github.com/gumayunov/custom-err-msg
+
+fn3. "Paperclip":http://github.com/thoughtbot/paperclip

@@ -1,0 +1,4 @@
+<h2><%= "#{@project.title}" %></h2>
+<%= image_tag @project.screenshot.url(:medium), :class => 'main' %>
+<p class="description"><%= @project.description %></p>
+<p><%= link_to "Visit site", @project.url, :rel => 'external' %></p>
